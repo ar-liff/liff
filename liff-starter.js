@@ -53,6 +53,7 @@ function getP(){
         makeVideo();
         makeAudio();
         makeSticker();
+        meProfile();
     }
     }
 
@@ -154,4 +155,40 @@ function makeSticker(){
             liff.closeWindow();
         });
     }
+}
+
+function meProfile(){
+    var tipe = getParameterByName('type');
+    liff.getProfile().then(function (prof) {
+        var stat = prof.statusMessage;
+        if (stat == null) {
+            var stat = " - ";
+        }
+        if (stat.length > 60) {
+            var stat = "Status Message is too long! Max 60 words";
+        }
+        if (tipe === 'profile') {
+            liff.sendMessages([{
+                type: "template",
+                altText: "Profile "+prof.displayName,
+                template: {
+                    type: "buttons",
+                    thumbnailImageUrl: prof.pictureUrl,
+                    imageAspectRatio: "square",
+                    imageSize: "cover",
+                    title: prof.displayName,
+                    text: stat,
+                    actions: [
+                        {
+                            type:"uri",
+                            label:"Me",
+                            uri:"line://app/1602687308-GXq4Vvk9?type=profile"
+                        }
+                    ]
+                }
+            }]).then(function () {
+                liff.closeWindow();
+            });
+        }
+    });
 }
