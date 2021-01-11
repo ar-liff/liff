@@ -3,8 +3,8 @@ html{
 }
 
 body {
-  background: -webkit-linear-gradient(200deg, #00C4FF, #9D1BB2);
-  background: linear-gradient(205deg, #00C4FF, #9D1BB2);
+  background: -webkit-linear-gradient(200deg, #8B0000, #8B0000);
+  background: linear-gradient(205deg, #8B0000, #8B0000);
   height: 100vh;
   margin: 0; 
   padding: 0;
@@ -43,11 +43,11 @@ body {
 }
 
 .button6 {
-    background-color: #212121;
+    background-color: #484848;
     color: white;
     width: 250px;
     border-radius: 6px;
-    border: 2px solid #212121;
+    border: 2px solid #000000;
 }
 
 .button6:hover {
@@ -57,25 +57,25 @@ body {
 }
 
 .button5 {
-    background-color: #3f3f3f;
-    color: black;
+    background-color: #484848;
+    color: white;
     width: 250px;
     border-radius: 6px;
-    border: 2px solid #3f3f3f;
+    border: 2px solid #000000;
 }
 
 .button5:hover {
     background-color: transparent;
-    color: white;
+    color: black;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .button4 {
-    background-color: #555555;
+    background-color: #484848;
     color: white;
     width: 250px;
     border-radius: 6px;
-    border: 2px solid #555555;
+    border: 2px solid #000000;
 }
 
 .button4:hover {
@@ -85,25 +85,25 @@ body {
 }
 
 .button3 {
-    background-color: #7c7c7c;
-    color: black;
+    background-color: #484848;
+    color: white;
     width: 250px;
     border-radius: 6px;
-    border: 2px solid #7c7c7c;
+    border: 2px solid #000000;
 }
 
 .button3:hover {
     background-color: transparent;
-    color: white;
+    color: black;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .button2 {
-    background-color: #a5a5a5;
+    background-color: #484848;
     color: white;
     width: 250px;
     border-radius: 6px;
-    border: 2px solid #a5a5a5;
+    border: 2px solid #000000;
 }
 
 .button2:hover {
@@ -113,16 +113,16 @@ body {
 }
 
 .button1 {
-    background-color: #cccccc;
-    color: black;
+    background-color: #484848;
+    color: white;
     width: 250px;
     border-radius: 6px;
-    border: 2px solid #cccccc;
+    border: 2px solid #000000;
 }
 
 .button1:hover {
     background-color: transparent;
-    color: white;
+    color: black;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -147,16 +147,16 @@ body {
 }
 
 a.bttn {
-  color: white;
+  color: black;
   text-decoration: none;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s ease all;
 }
 a.bttn:hover {
-  color: #2376fc;
+  color: #8B0000;
 }
 a.bttn:focus {
-  color: #2376fc;
+  color: #8B0000;
 }
 
 .bttn {
@@ -169,7 +169,7 @@ a.bttn:focus {
   width: 270px;
   font-weight: bold;
   padding: 5px 0px;
-  border: 3px solid #1bf992;
+  border: 3px solid #000000;
   border-radius: 1px;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -184,7 +184,7 @@ a.bttn:focus {
   bottom: 0;
   opacity: 0;
   content: '';
-  background-color: #1bf992;
+  background-color: #000000;
   z-index: -2;
 }
 .bttn:hover:before {
